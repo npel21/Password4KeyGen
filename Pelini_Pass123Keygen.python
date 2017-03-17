@@ -1,0 +1,23 @@
+
+password = 'ABCDEF123456'
+print "Password 1 is "
+passwd = ''
+for idx, char in enumerate(password):
+    passwd += chr(ord(char) + 5)
+print passwd, "\n"
+
+
+password = 'ARCHIEMILLER'
+print "Password 2 is "
+passwd = ''
+for idx, char in enumerate(password):
+    passwd += chr(ord(char) - idx)
+print passwd, "\n"
+
+
+password = 'GO FLYERS!!!'
+print "Password 3 is "
+passwd = ''
+for idx, char in enumerate(password):
+    passwd += chr(ord(char) ^ idx)
+print passwd, "\n"
